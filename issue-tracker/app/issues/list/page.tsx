@@ -39,3 +39,5 @@ export default async function IssuesPage() {
     </main>
   );
 }
+
+export const dynamic = "force-dynamic";
