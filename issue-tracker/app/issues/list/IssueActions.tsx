@@ -1,15 +1,17 @@
-import { Button, Heading } from "@radix-ui/themes";
+import { Button, Flex, Heading } from "@radix-ui/themes";
 import Link from "next/link";
+import IssueStatusFilter from "./IssueStatusFilter";
 
 export default function IssueActions() {
   return (
     <div className="mt-5">
       <Heading>Issues</Heading>
-      <div className="mb-5 mt-5">
+      <Flex mt="5" justify="between">
+        <IssueStatusFilter />
         <Link href="/issues/new">
           <Button>New Issue</Button>
         </Link>
-      </div>
+      </Flex>
     </div>
   );
 }

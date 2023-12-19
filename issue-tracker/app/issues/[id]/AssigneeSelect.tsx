@@ -26,7 +26,7 @@ export default async function AssigneeSelect({ issue }: { issue: Issue }) {
       <Select.Root
         defaultValue={issue.assignedToUserId || "unassigned"}
         onValueChange={handleChange}>
-        <Select.Trigger placeholder="Assign to..." />
+        <Select.Trigger />
         <Select.Content>
           <Select.Group>
             <Select.Label>Suggestions</Select.Label>
